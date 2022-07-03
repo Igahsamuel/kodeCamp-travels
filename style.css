@@ -1,0 +1,34 @@
+:root{
+  --primary-color:#174aad;
+  --Dark-color:#1F222A;
+}
+body{
+  font-size: Open Sans;
+}
+.fate{
+  color:var(--primary-color);
+}
+.dark{
+  color: var(--Dark-color);
+  position: relative;
+  margin-top: 10px;
+}
+.dark::after{
+  content:"";
+  position:absolute;
+  width:42%;
+  border-bottom: solid 1px #174aad;
+  height:5px;
+  bottom:-65%;
+  left: 29%;
+  /* color:var(--primary-color); */
+}
+.decoration{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px){
+  #ourteam img{
+    margin-top: 20px;
+  }
+}
